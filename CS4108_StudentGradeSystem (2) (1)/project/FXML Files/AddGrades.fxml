@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentgradesystem.AddGradesController">
+
+    <children>
+
+        <Label layoutX="170" layoutY="25" style="-fx-font-size: 24px; -fx-underline: true;" text="Student Grade System" />
+
+        <Label layoutX="245" layoutY="75" style="-fx-font-size: 18px;" text="Add Grades" />
+
+        <Label layoutX="170.0" layoutY="142.0" text="Student ID:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+
+        <TextField fx:id="studentIdField" layoutX="275" layoutY="140" prefWidth="150" />
+
+        <Label layoutX="172.0" layoutY="195.0" text="Grade:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+
+        <TextField fx:id="gradeField" layoutX="275" layoutY="195" prefWidth="150" />
+
+        <Button layoutX="195.0" layoutY="270.0" onAction="#saveGrade" prefWidth="100" style="-fx-background-color: #BFDBFE;" text="Save Grade">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+
+        <Button layoutX="338.0" layoutY="270.0" onAction="#goBack" prefWidth="90" style="-fx-background-color: #BFDBFE;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+
+        <Label fx:id="messageLabel" layoutX="170" layoutY="330" prefWidth="300" />
+
+    </children>
+
+</AnchorPane>

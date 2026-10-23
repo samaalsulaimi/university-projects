@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.mycompany.studentgradesystem.AddStudentController">
+   <children>
+      <Label layoutX="264.0" layoutY="139.0" text="Add Student" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="28.0" text="Student Grade System" textOverrun="WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="225.0" layoutY="210.0" promptText="Leena Althumali" />
+      <TextField fx:id="idField" layoutX="225.0" layoutY="259.0" promptText="46003332" />
+      <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="281.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/قصة%20Instagram%20أبيض%20ذهبي%20وأخضر%20بسيط%20تهنئه%20عيد%20مبارك%20%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="111.0" layoutY="212.0" text="Student Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="261.0" text="Student ID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="239.0" layoutY="321.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: #BFDBFE;" text="Add Student" textFill="#070707">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="349.0" layoutY="321.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #BFDBFE;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

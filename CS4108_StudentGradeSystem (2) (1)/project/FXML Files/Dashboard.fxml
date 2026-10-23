@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentgradesystem.DashboardController">
+
+    <children>
+
+        <Label layoutX="224.0" layoutY="23.0" prefHeight="43.0" prefWidth="151.0" style="-fx-font-size: 30;" text="Dashboard" underline="true">
+         <font>
+            <Font size="38.0" />
+         </font>
+        </Label>
+
+        <Label layoutX="245" layoutY="78.0" text="Total Students:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="studentsCountLabel" layoutX="360" layoutY="78" />
+
+        <TableView fx:id="studentsTable" layoutX="100.0" layoutY="113.0" prefHeight="147.0" prefWidth="395.0">
+
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="120" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="150" text="Name" />
+                <TableColumn fx:id="gradeColumn" prefWidth="120" text="Grade" />
+            </columns>
+
+        </TableView>
+
+        <!-- Buttons -->
+        <Button layoutX="130.0" layoutY="287.0" onAction="#goToAddStudent" prefWidth="120" style="-fx-background-color: #BFDBFE;" text="Add Student">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="130.0" layoutY="325.0" onAction="#goToAddGrades" prefWidth="120" style="-fx-background-color: #BFDBFE;" text="Add Grades">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="324.0" layoutY="287.0" onAction="#goToViewStudents" prefWidth="120" style="-fx-background-color: #BFDBFE;" text="View Students">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="324.0" layoutY="325.0" onAction="#goToViewReports" prefWidth="120" style="-fx-background-color: #BFDBFE;" text="View Reports">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button layoutX="238.0" layoutY="360.0" onAction="#logout" prefWidth="120" style="-fx-background-color: #BFDBFE;" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+
+    </children>
+
+</AnchorPane>
